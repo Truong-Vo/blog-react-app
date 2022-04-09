@@ -7,9 +7,11 @@ import Write from './components/Pages/Write/Write'
 import TopBar from './components/TopBar/TopBar'
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
 import Post from './components/Post/Post'
+import { useContext } from 'react'
+import { Context } from './context/Context'
 
 function App() {
-  const user = false
+  const { user } = useContext(Context)
   return (
     <BrowserRouter>
       <TopBar />

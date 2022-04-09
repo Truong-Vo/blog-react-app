@@ -4,12 +4,28 @@
     .singlePostWrapper {
         padding: 20px;
         padding-right: 0;
+        display: flex;
+        flex-direction: column;
 
         .singlePostImg {
             width: 100%;
             height: 300px;
             border-radius: 5px;
             object-fit: cover;
+        }
+
+        .singlePostTitleInput {
+            text-align: center;
+            margin: 10px;
+            font-family: 'Lora', serif;
+            font-size: 28px;
+            border: none;
+            color: gray;
+            border-bottom: 1px solid lightgray;
+
+            &:focus {
+                outline: none;
+            }
         }
 
         .singlePostTitle {
@@ -37,6 +53,8 @@
             }
         }
 
+
+
         .singlePostInfo {
             margin-bottom: 20px;
             display: flex;
@@ -44,6 +62,18 @@
             font-size: 16px;
             color: #b39656;
             font-family: 'Varela Round', sans-serif;
+        }
+
+        .singlePostDescInput {
+            color: #666;
+            font-size: 18px;
+            line-height: 25px;
+            border: none;
+
+            &:focus {
+                outline: none;
+
+            }
         }
 
         .singlePostDesc {
@@ -56,6 +86,17 @@
                 font-size: 30px;
                 font-weight: 600;
             }
+        }
+
+        .singlePostButton {
+            width: 100px;
+            border: none;
+            background-color: teal;
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: flex-end;
         }
 
     }

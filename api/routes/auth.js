@@ -13,7 +13,7 @@ router.post('/register', async (req, res) => {
       password: hashedPass,
     })
 
-    // bcrypt isa library to help you hash passwords.
+    // bcrypt is a library to help you hash passwords.
 
     const user = await newUser.save()
     res.status(200).json(user)
